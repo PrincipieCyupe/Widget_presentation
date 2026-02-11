@@ -31,4 +31,6 @@ this is helpful when you want to add other actions on the snackbar, maybe closin
 
 ## Demo Screenshot of The Final UI
 Down below is a screenshot of a tiny application showing SnackBar in action:
+
+
 <img width="397" height="855" alt="image" src="https://github.com/user-attachments/assets/e12644d2-88bd-429c-b11c-90b53f80c16e" />
