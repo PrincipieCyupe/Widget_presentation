@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
           backgroundColor: Colors.black54,
           title: Text("Snack Bar"),
         ),
-        body: SnackBarApp(),
+        body: SnackBarApp(), // creating a widget that will be called and this will consist all about the snackbar that is essential for this app
       ),
     );
   }
@@ -40,6 +40,7 @@ class _SnackBarAppState extends State<SnackBarApp> {
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: ElevatedButton(
                 onPressed: () {
+                  // calling on this method to displays the snackbar
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text("This is a pop up message from the bottom"), backgroundColor: const Color.fromARGB(255, 102, 83, 22), duration: Duration(days: 1), action: SnackBarAction(label: "close", onPressed: (){}),),
                   );
@@ -49,6 +50,7 @@ class _SnackBarAppState extends State<SnackBarApp> {
             ),
             ElevatedButton(
               onPressed: () {
+                // calling on this method to hide current snackbar
                 ScaffoldMessenger.of(context).hideCurrentSnackBar();
               },
               child: Text("Hide Snack Bar"),
