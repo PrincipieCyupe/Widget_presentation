@@ -1,4 +1,4 @@
-# rolldice
+# Snackbar
 
 A new Flutter project.
 
